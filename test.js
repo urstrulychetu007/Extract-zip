@@ -180,7 +180,7 @@ app.get('/extract',(req,res)=>{
   setTimeout(()=>{
     writejson();
 
-    res.render('index');
+    res.render('index',{zipfileName});
 },10000)
 })
 
