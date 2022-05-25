@@ -75,7 +75,7 @@ body
                 var parentpath = data.node.parents
                 parentpath.reverse()
                 console.log(parentpath)
-                var url = '/dest/'
+                var url = <%= zipfilename %>
                 for(let i=1;i<parentpath.length;i++)
                 {
                     url+= (data.instance._model.data[parentpath[i]].text)+'/'
